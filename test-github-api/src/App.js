@@ -2,16 +2,13 @@ import styled from 'styled-components';
 
 function App() {
   const getData = async () => {
-    const response = await fetch(
-      'https://api.github.com/repos/juddroid/ccoonlog/issues',
-      {
-        method: 'GET',
-        'Content-Type': 'application/json',
-        headers: {
-          Authorization: `Basic ${process.env.REACT_APP_TOKEN}`,
-        },
-      }
-    );
+    const response = await fetch('https://api.github.com/repos/juddroid/ccoonlog/issues', {
+      method: 'GET',
+      'Content-Type': 'application/json',
+      headers: {
+        Authorization: `Basic ${process.env.REACT_APP_TOKEN}`,
+      },
+    });
     const data = await response.json();
     console.log(data);
     return data;
@@ -22,6 +19,7 @@ function App() {
   return (
     <AppStyle>
       <Button onClick={handleClickButton}>Click</Button>
+      <button>{'name'}</button>
     </AppStyle>
   );
 }
