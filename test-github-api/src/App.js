@@ -19,7 +19,7 @@ function App() {
   return (
     <AppStyle>
       <Button onClick={handleClickButton}>Click</Button>
-      <button>{'name commit'}</button>
+      <button>{'name b'}</button>
     </AppStyle>
   );
 }
