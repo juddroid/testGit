@@ -20,6 +20,7 @@ function App() {
     <AppStyle>
       <Button onClick={handleClickButton}>Click</Button>
       <button>{'name master button'}</button>
+      <button>{'name master button2'}</button>
     </AppStyle>
   );
 }
