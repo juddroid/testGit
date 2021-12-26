@@ -19,7 +19,7 @@ function App() {
   return (
     <AppStyle>
       <Button onClick={handleClickButton}>Click</Button>
-      <button>{'n'}</button>
+      <button>{'name master'}</button>
     </AppStyle>
   );
 }
